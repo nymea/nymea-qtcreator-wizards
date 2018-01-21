@@ -1,0 +1,339 @@
+{
+    "version": 1,
+    "kind": "project",
+    "id": "nymea-plugin",
+    "category": "nymea",
+    "trDescription": { 
+        "C": "Project template for developing a new nymea plugin.", 
+        "en_US": "Project template for developing a new nymea plugin.", 
+        "de_DE": "Projekt Vorlage für die Entwicklung eines neuen nymea Plugins." 
+    },
+    "trDisplayName": { 
+        "C": "Plugin for nymea", 
+        "en_US": "Plugin for nymea", 
+        "de_DE": "Plugin für nymea" 
+    },
+    "trDisplayCategory": "nymea",
+    "icon": "nymea-plugin.png",
+    "enabled": "%{JS: [ %{Plugins} ].indexOf('QmakeProjectManager') >= 0}",
+    "options": [
+        {
+            "key": "TargetPath",
+            "value": "%{Path}"
+        },
+        {
+            "key": "IsTopLevelProject",
+            "value": "%{JS: !'%{Exists:ProjectExplorer.Profile.Ids}' }"
+        },
+        {
+            "key": "ProFileName",
+            "value": "%{JS: Util.fileName('%{ProjectDirectory}/%{ProjectName}', 'pro')}"
+        },
+        {
+            "key": "GUARD", 
+            "value": "%{JS: Cpp.classToHeaderGuard('%{Class}', '%{JS: Util.preferredSuffix('text/x-c++hdr')}')}" 
+        },
+        {
+            "key": "ObjectName", 
+            "value": "%{JS: '%{ProjectName}'.charAt(0).toUpperCase() + '%{ProjectName}'.slice(1)}" 
+        }
+        
+    ],
+    "pages": [
+        {
+            "trDisplayName": { 
+                "C": "Project Location", 
+                "en_US": "Project Location", 
+                "de_DE": "Projekt Verzeichnis" 
+            },
+            "trShortTitle": { "C": "Location", "en_US": "Location", "de_DE": "Verzeichnis" },
+            "typeId": "Project",
+            "data": { 
+                "trDescription": { 
+                    "C": "This is a project template for developing a nymea plugin", 
+                    "en_US": "This is a project template for developing a nymea plugin", 
+                    "de_DE": "Dies ist eine Projektvorlage für die Entwicklung eines nymea Plugins." 
+                } 
+            }
+        },
+        {
+            "trDisplayName": { 
+                "C": "Plugin details", 
+                "en_US": "Plugin details", 
+                "de_DE": "Plugin Details" 
+            },
+            "trShortTitle": "Details",
+            "typeId": "Fields",
+            "data": [
+                {
+                    "name": "Class",
+                    "trDisplayName": { 
+                        "C": "Class name:", 
+                        "en_US": "Class name:", 
+                        "de_DE": "Klassen Name:" 
+                    },
+                    "mandatory": true,
+                    "type": "LineEdit",
+                    "data": { 
+                        "trText": "DevicePlugin%{ObjectName}",
+                        "validator": "[a-zA-Z][a-zA-Z0-9]*" 
+                    }
+                },
+                {
+                    "name": "Vendor",
+                    "trDisplayName": { 
+                        "C": "Vendor name:", 
+                        "en_US": "Vendor name:", 
+                        "de_DE": "Hersteller Name:" 
+                    },
+                    "mandatory": true,
+                    "type": "LineEdit",
+                    "data": { 
+                        "trText": "guh",
+                        "validator": "[a-zA-Z][a-zA-Z0-9]*" 
+                    }
+                },
+                {
+                    "name": "DeviceClass",
+                    "trDisplayName": { 
+                        "C": "Device name:", 
+                        "en_US": "Device name:", 
+                        "de_DE": "Geräte Name:" 
+                    },
+                    "mandatory": true,
+                    "type": "LineEdit",
+                    "data": { 
+                        "trText": "Temperature",
+                        "validator": "[a-zA-Z][a-zA-Z0-9]*" 
+                    }
+                },
+                {
+                    "name": "SetupMethod",
+                    "trDisplayName": { 
+                        "C": "Setup method:", 
+                        "en_US": "Setup method:", 
+                        "de_DE": "Setup Methode:" 
+                    },
+                    "mandatory": true,
+                    "type": "ComboBox",
+                    "data": {
+                        "items": [ 
+                            "justAdd", 
+                            "displayPin", 
+                            "enterPin", 
+                            "pushButton" 
+                        ]
+                    }
+                },
+                {
+                    "name": "CreateMethod",
+                    "trDisplayName": { 
+                        "C": "Create method:", 
+                        "en_US": "Create method:", 
+                        "de_DE": "Erstell-Methode:" 
+                    },
+                    "mandatory": true,
+                    "type": "ComboBox",
+                    "data": {
+                        "items": [ 
+                            "user", 
+                            "discovery", 
+                            "auto" 
+                        ]
+                    }
+                },
+                {
+                    "name": "DeviceIcon",
+                    "trDisplayName": { 
+                        "C": "Device icon:", 
+                        "en_US": "Device icon:", 
+                        "de_DE": "Geräte Icon:" 
+                    },
+                    "mandatory": true,
+                    "type": "ComboBox",
+                    "data": {
+                        "items": [ 
+                            "None", 
+                            "Bed", 
+                            "Blinds",
+                            "CeilingLamp",
+                            "Couch",
+                            "DeskLamp",
+                            "Desk",
+                            "Hifi",
+                            "Power",
+                            "Energy",
+                            "Radio",
+                            "SmartPhone",
+                            "Socket",
+                            "StandardLamp",
+                            "Sun",
+                            "Tablet",
+                            "Thermometer",
+                            "Tune",
+                            "Tv",
+                            "Battery",
+                            "Dishwasher",
+                            "WashingMachine",
+                            "LaundryDryer",
+                            "IrHeater",
+                            "Radiator",
+                            "Switch",
+                            "MotionDetectors",
+                            "Weather",
+                            "Time",
+                            "LightBulb",
+                            "Gateway",
+                            "Mail",
+                            "Network",
+                            "Cloud",
+                            "Garage",
+                            "RollerShutter"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "trDisplayName": { 
+                "C": "Developer information", 
+                "en_US": "Developer information", 
+                "de_DE": "Entwickler Informationen" 
+            },
+            "trShortTitle": { 
+                "C": "Developer", 
+                "en_US": "Developer", 
+                "de_DE": "Entwickler" 
+            },
+            "typeId": "Fields",
+            "data": [
+                {
+                    "name": "DeveloperDescription",
+                    "type": "Label",
+                    "span": true,
+                    "data": {
+                        "wordWrap": true,
+                        "trText": { 
+                            "C": "Following details will be used for the license and copyright information creation", 
+                            "en_US": "Following details will be used for the license and copyright information creation.", 
+                            "de_DE": "Folgende Details werden für die Lizenz und Copyright Informationen Generierung verwendet." 
+                        }
+                    }
+                },
+                {
+                    "name": "DeveloperName",
+                    "trDisplayName": "Name:",
+                    "trPlaceholder": { 
+                        "C": "Name Surname", 
+                        "en_US": "Name Surname", 
+                        "de_DE": "Vorname Nachname" 
+                    },
+                    "mandatory": true,
+                    "type": "LineEdit"
+                },
+                {
+                    "name": "DeveloperMail",
+                    "trDisplayName": "Mail:",
+                    "trPlaceholder": { 
+                        "C": "name.surename@example.com", 
+                        "en_US": "name.surename@example.com", 
+                        "de_DE": "name.nachname@example.com" 
+                    },
+                    "mandatory": true,
+                    "type": "LineEdit",
+                    "data": { "validator": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}" }
+                }
+            ]
+        },
+        {
+            "trDisplayName": { 
+                "C": "Kit Selection", 
+                "en_US": "Kit Selection", 
+                "de_DE": "Kit Auswahl" 
+            },
+            "trShortTitle": "Kits",
+            "typeId": "Kits",
+            "enabled": "%{IsTopLevelProject}",
+            "data": { "projectFilePath": "%{ProFileName}" }
+        },
+        {
+            "trDisplayName": "Project Management",
+            "trShortTitle": { 
+                "C": "Summary", 
+                "en_US": "Summary", 
+                "de_DE": "Zusammenfassung" 
+            },
+            "typeId": "Summary"
+        }
+    ],
+    "generators": [
+        {
+            "typeId": "File",
+            "data": [
+                {
+                    "source": ".gitignore",
+                    "target": ".gitignore",
+                    "condition": "%{JS: ( %{IsTopLevelProject} && '%{VersionControl}' === 'G.Git' )}"
+                },
+                {
+                    "source": "LICENSE",
+                    "target": "LICENSE"
+                },
+                {
+                    "source": "README.md",
+                    "target": "README.md"
+                },
+                {
+                    "source": "deviceplugintemplate.json",
+                    "target": "deviceplugin%{ProjectName}.json"
+                },
+                {
+                    "source": "deviceplugintemplate.cpp",
+                    "target": "deviceplugin%{ProjectName}.cpp"
+                },
+                {
+                    "source": "deviceplugintemplate.h",
+                    "target": "deviceplugin%{ProjectName}.h",
+                    "openInEditor": true
+                },
+                {
+                    "source": "template.pro",
+                    "target": "%{ProjectName}.pro",
+                    "openAsProject": true
+                },
+                {
+                    "source": "plugins.pri",
+                    "target": "plugins.pri"
+                },
+                {
+                    "source": "debian/changelog",
+                    "target": "debian/changelog"
+                },
+                {
+                    "source": "debian/compat",
+                    "target": "debian/compat"
+                },
+                {
+                    "source": "debian/control",
+                    "target": "debian/control"
+                },
+                {
+                    "source": "debian/copyright",
+                    "target": "debian/copyright"
+                },
+                {
+                    "source": "debian/guh-plugin-template.install.in",
+                    "target": "debian/guh-plugin-%{ProjectName}.install.in"
+                },
+                {
+                    "source": "debian/rules",
+                    "target": "debian/rules"
+                },
+                {
+                    "source": "debian/source/format",
+                    "target": "debian/source/format"
+                }
+            ]
+        }
+    ]
+}

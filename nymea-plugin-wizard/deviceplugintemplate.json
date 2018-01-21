@@ -1,0 +1,37 @@
+{
+    "name": "%{ObjectName}",
+    "idName": "%{ObjectName}",
+    "id": "00000000-0000-0000-0000-000000000000",
+    "vendors": [
+        {
+            "name": "%{Vendor}",
+            "idName": "%{ProjectName}Vendor",
+            "id": "00000000-0000-0000-0000-000000000000",
+            "deviceClasses": [
+                {
+                    "name": "%{DeviceClass}",
+                    "idName": "%{ProjectName}",
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "deviceIcon": "%{DeviceIcon}",
+                    "setupMethod": "%{SetupMethod}",
+                    "createMethods": ["%{CreateMethod}"],
+                    "paramTypes": [
+
+                    ],
+                    "stateTypes":[
+
+                    ],
+                    "actionTypes":[
+  
+                    ],
+                    "eventTypes":[
+  
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+
+
