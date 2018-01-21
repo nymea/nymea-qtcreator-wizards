@@ -67,11 +67,7 @@
             "data": [
                 {
                     "name": "Class",
-                    "trDisplayName": { 
-                        "C": "Class name:", 
-                        "en_US": "Class name:", 
-                        "de_DE": "Klassen Name:" 
-                    },
+                    "trDisplayName": "Class name:",
                     "mandatory": true,
                     "type": "LineEdit",
                     "data": { 
@@ -80,14 +76,32 @@
                     }
                 },
                 {
+                    "name": "Spacer1",
+                    "type": "Spacer",
+                    "data":
+                    {
+                        "factor": 3
+                    }
+                },
+                {
+                    "name": "JsonDescription",
+                    "type": "Label",
+                    "span": true,
+                    "data": {
+                        "wordWrap": true,
+                        "trText": { 
+                            "C": "Plugin JSON information", 
+                            "en_US": "Plugin JSON information", 
+                            "de_DE": "Plugin JSON Informationen" 
+                        }
+                    }
+                },
+                {
                     "name": "Vendor",
-                    "trDisplayName": { 
-                        "C": "Vendor name:", 
-                        "en_US": "Vendor name:", 
-                        "de_DE": "Hersteller Name:" 
-                    },
+                    "trDisplayName": "Vendor name:",
                     "mandatory": true,
                     "type": "LineEdit",
+                    "trIncompleteMessage": "Invalid vendor",
                     "data": { 
                         "trText": "guh",
                         "validator": "[a-zA-Z][a-zA-Z0-9]*" 
@@ -95,25 +109,18 @@
                 },
                 {
                     "name": "DeviceClass",
-                    "trDisplayName": { 
-                        "C": "Device name:", 
-                        "en_US": "Device name:", 
-                        "de_DE": "Geräte Name:" 
-                    },
+                    "trDisplayName": "Device name:",
                     "mandatory": true,
                     "type": "LineEdit",
+                    "trIncompleteMessage": "Invalid device name.",
                     "data": { 
-                        "trText": "Temperature",
+                        "trText": "untitled",
                         "validator": "[a-zA-Z][a-zA-Z0-9]*" 
                     }
                 },
                 {
                     "name": "SetupMethod",
-                    "trDisplayName": { 
-                        "C": "Setup method:", 
-                        "en_US": "Setup method:", 
-                        "de_DE": "Setup Methode:" 
-                    },
+                    "trDisplayName": "Setup method:",
                     "mandatory": true,
                     "type": "ComboBox",
                     "data": {
@@ -127,11 +134,7 @@
                 },
                 {
                     "name": "CreateMethod",
-                    "trDisplayName": { 
-                        "C": "Create method:", 
-                        "en_US": "Create method:", 
-                        "de_DE": "Erstell-Methode:" 
-                    },
+                    "trDisplayName": "Create method:",
                     "mandatory": true,
                     "type": "ComboBox",
                     "data": {
@@ -144,11 +147,7 @@
                 },
                 {
                     "name": "DeviceIcon",
-                    "trDisplayName": { 
-                        "C": "Device icon:", 
-                        "en_US": "Device icon:", 
-                        "de_DE": "Geräte Icon:" 
-                    },
+                    "trDisplayName": "Icon:",
                     "mandatory": true,
                     "type": "ComboBox",
                     "data": {
