@@ -1,1 +1,4 @@
-%{ProjectName}
+# %{ProjectName}
+--------------------------------
+
+Description of the plugin...
