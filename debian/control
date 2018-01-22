@@ -1,16 +1,16 @@
-Source: nymea-plugin-wizard
+Source: nymea-qtcreator-wizards
 Section: utils
 Priority: options
 Maintainer: Simon Stürz <simon.stuerz@guh.io>
 Standards-Version: 3.9.3
-Build-depends: debhelper (>= 0.0.0),
-               libguh1-dev
+Build-depends: debhelper (>= 0.0.0)
 
-Package: nymea-plugin-wizard
+Package: nymea-qtcreator-wizards
 Architecture: all
 Section: utils
 Depends: ${shlibs:Depends},
          ${misc:Depends}
+Recommends: libguh1-dev
 Description: Qt Creator project template for nymea.io plugins
  The nymea daemon is a plugin based IoT (Internet of Things) server. The
  server works like a translator for devices, things and services and

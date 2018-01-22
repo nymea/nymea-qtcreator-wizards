@@ -1,17 +1,17 @@
 {
     "version": 1,
     "kind": "project",
-    "id": "nymea-plugin",
+    "id": "P.NymeaPlugin",
     "category": "nymea",
-    "trDescription": { 
-        "C": "Project template for developing a new nymea plugin.", 
-        "en_US": "Project template for developing a new nymea plugin.", 
-        "de_DE": "Projekt Vorlage für die Entwicklung eines neuen nymea Plugins." 
+    "trDescription": {
+        "C": "Project template for developing a new nymea plugin.",
+        "en_US": "Project template for developing a new nymea plugin.",
+        "de_DE": "Projekt Vorlage für die Entwicklung eines neuen nymea Plugins."
     },
-    "trDisplayName": { 
-        "C": "Plugin for nymea", 
-        "en_US": "Plugin for nymea", 
-        "de_DE": "Plugin für nymea" 
+    "trDisplayName": {
+        "C": "Plugin for nymea",
+        "en_US": "Plugin for nymea",
+        "de_DE": "Plugin für nymea"
     },
     "trDisplayCategory": "nymea",
     "icon": "nymea-plugin.png",
@@ -30,37 +30,40 @@
             "value": "%{JS: Util.fileName('%{ProjectDirectory}/%{ProjectName}', 'pro')}"
         },
         {
-            "key": "GUARD", 
-            "value": "%{JS: Cpp.classToHeaderGuard('%{Class}', '%{JS: Util.preferredSuffix('text/x-c++hdr')}')}" 
+            "key": "GUARD",
+            "value": "%{JS: Cpp.classToHeaderGuard('%{Class}', '%{JS: Util.preferredSuffix('text/x-c++hdr')}')}"
         },
         {
-            "key": "ObjectName", 
-            "value": "%{JS: '%{ProjectName}'.charAt(0).toUpperCase() + '%{ProjectName}'.slice(1)}" 
+            "key": "ObjectName",
+            "value": "%{JS: '%{ProjectName}'.charAt(0).toUpperCase() + '%{ProjectName}'.slice(1)}"
         }
-        
     ],
     "pages": [
         {
-            "trDisplayName": { 
-                "C": "Project Location", 
-                "en_US": "Project Location", 
-                "de_DE": "Projekt Verzeichnis" 
+            "trDisplayName": {
+                "C": "Project Location",
+                "en_US": "Project Location",
+                "de_DE": "Projekt Verzeichnis"
             },
-            "trShortTitle": { "C": "Location", "en_US": "Location", "de_DE": "Verzeichnis" },
+            "trShortTitle": {
+                "C": "Location",
+                "en_US": "Location",
+                "de_DE": "Verzeichnis"
+            },
             "typeId": "Project",
-            "data": { 
-                "trDescription": { 
-                    "C": "This is a project template for developing a nymea plugin", 
-                    "en_US": "This is a project template for developing a nymea plugin", 
-                    "de_DE": "Dies ist eine Projektvorlage für die Entwicklung eines nymea Plugins." 
-                } 
+            "data": {
+                "trDescription": {
+                    "C": "This is a project template for developing a nymea plugin",
+                    "en_US": "This is a project template for developing a nymea plugin",
+                    "de_DE": "Dies ist eine Projektvorlage für die Entwicklung eines nymea Plugins."
+                }
             }
         },
         {
-            "trDisplayName": { 
-                "C": "Plugin details", 
-                "en_US": "Plugin details", 
-                "de_DE": "Plugin Details" 
+            "trDisplayName": {
+                "C": "Plugin details",
+                "en_US": "Plugin details",
+                "de_DE": "Plugin Details"
             },
             "trShortTitle": "Details",
             "typeId": "Fields",
@@ -70,16 +73,15 @@
                     "trDisplayName": "Class name:",
                     "mandatory": true,
                     "type": "LineEdit",
-                    "data": { 
+                    "data": {
                         "trText": "DevicePlugin%{ObjectName}",
-                        "validator": "[a-zA-Z][a-zA-Z0-9]*" 
+                        "validator": "[a-zA-Z][a-zA-Z0-9]*"
                     }
                 },
                 {
                     "name": "Spacer1",
                     "type": "Spacer",
-                    "data":
-                    {
+                    "data": {
                         "factor": 3
                     }
                 },
@@ -89,10 +91,10 @@
                     "span": true,
                     "data": {
                         "wordWrap": true,
-                        "trText": { 
-                            "C": "Plugin JSON information", 
-                            "en_US": "Plugin JSON information", 
-                            "de_DE": "Plugin JSON Informationen" 
+                        "trText": {
+                            "C": "Plugin JSON information",
+                            "en_US": "Plugin JSON information",
+                            "de_DE": "Plugin JSON Informationen"
                         }
                     }
                 },
@@ -102,9 +104,9 @@
                     "mandatory": true,
                     "type": "LineEdit",
                     "trIncompleteMessage": "Invalid vendor",
-                    "data": { 
+                    "data": {
                         "trText": "guh",
-                        "validator": "[a-zA-Z][a-zA-Z0-9]*" 
+                        "validator": "[a-zA-Z][a-zA-Z0-9]*"
                     }
                 },
                 {
@@ -113,9 +115,9 @@
                     "mandatory": true,
                     "type": "LineEdit",
                     "trIncompleteMessage": "Invalid device name.",
-                    "data": { 
+                    "data": {
                         "trText": "untitled",
-                        "validator": "[a-zA-Z][a-zA-Z0-9]*" 
+                        "validator": "[a-zA-Z][a-zA-Z0-9]*"
                     }
                 },
                 {
@@ -124,11 +126,11 @@
                     "mandatory": true,
                     "type": "ComboBox",
                     "data": {
-                        "items": [ 
-                            "justAdd", 
-                            "displayPin", 
-                            "enterPin", 
-                            "pushButton" 
+                        "items": [
+                            "justAdd",
+                            "displayPin",
+                            "enterPin",
+                            "pushButton"
                         ]
                     }
                 },
@@ -138,10 +140,10 @@
                     "mandatory": true,
                     "type": "ComboBox",
                     "data": {
-                        "items": [ 
-                            "user", 
-                            "discovery", 
-                            "auto" 
+                        "items": [
+                            "user",
+                            "discovery",
+                            "auto"
                         ]
                     }
                 },
@@ -151,9 +153,9 @@
                     "mandatory": true,
                     "type": "ComboBox",
                     "data": {
-                        "items": [ 
-                            "None", 
-                            "Bed", 
+                        "items": [
+                            "None",
+                            "Bed",
                             "Blinds",
                             "CeilingLamp",
                             "Couch",
@@ -194,15 +196,15 @@
             ]
         },
         {
-            "trDisplayName": { 
-                "C": "Developer information", 
-                "en_US": "Developer information", 
-                "de_DE": "Entwickler Informationen" 
+            "trDisplayName": {
+                "C": "Developer information",
+                "en_US": "Developer information",
+                "de_DE": "Entwickler Informationen"
             },
-            "trShortTitle": { 
-                "C": "Developer", 
-                "en_US": "Developer", 
-                "de_DE": "Entwickler" 
+            "trShortTitle": {
+                "C": "Developer",
+                "en_US": "Developer",
+                "de_DE": "Entwickler"
             },
             "typeId": "Fields",
             "data": [
@@ -212,20 +214,20 @@
                     "span": true,
                     "data": {
                         "wordWrap": true,
-                        "trText": { 
-                            "C": "Following details will be used for the license and copyright information creation", 
-                            "en_US": "Following details will be used for the license and copyright information creation.", 
-                            "de_DE": "Folgende Details werden für die Lizenz und Copyright Informationen Generierung verwendet." 
+                        "trText": {
+                            "C": "Following details will be used for the license and copyright information creation",
+                            "en_US": "Following details will be used for the license and copyright information creation.",
+                            "de_DE": "Folgende Details werden für die Lizenz und Copyright Informationen Generierung verwendet."
                         }
                     }
                 },
                 {
                     "name": "DeveloperName",
                     "trDisplayName": "Name:",
-                    "trPlaceholder": { 
-                        "C": "Name Surname", 
-                        "en_US": "Name Surname", 
-                        "de_DE": "Vorname Nachname" 
+                    "trPlaceholder": {
+                        "C": "Name Surname",
+                        "en_US": "Name Surname",
+                        "de_DE": "Vorname Nachname"
                     },
                     "mandatory": true,
                     "type": "LineEdit"
@@ -233,34 +235,38 @@
                 {
                     "name": "DeveloperMail",
                     "trDisplayName": "Mail:",
-                    "trPlaceholder": { 
-                        "C": "name.surename@example.com", 
-                        "en_US": "name.surename@example.com", 
-                        "de_DE": "name.nachname@example.com" 
+                    "trPlaceholder": {
+                        "C": "name.surename@example.com",
+                        "en_US": "name.surename@example.com",
+                        "de_DE": "name.nachname@example.com"
                     },
                     "mandatory": true,
                     "type": "LineEdit",
-                    "data": { "validator": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}" }
+                    "data": {
+                        "validator": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}"
+                    }
                 }
             ]
         },
         {
-            "trDisplayName": { 
-                "C": "Kit Selection", 
-                "en_US": "Kit Selection", 
-                "de_DE": "Kit Auswahl" 
+            "trDisplayName": {
+                "C": "Kit Selection",
+                "en_US": "Kit Selection",
+                "de_DE": "Kit Auswahl"
             },
             "trShortTitle": "Kits",
             "typeId": "Kits",
             "enabled": "%{IsTopLevelProject}",
-            "data": { "projectFilePath": "%{ProFileName}" }
+            "data": {
+                "projectFilePath": "%{ProFileName}"
+            }
         },
         {
             "trDisplayName": "Project Management",
-            "trShortTitle": { 
-                "C": "Summary", 
-                "en_US": "Summary", 
-                "de_DE": "Zusammenfassung" 
+            "trShortTitle": {
+                "C": "Summary",
+                "en_US": "Summary",
+                "de_DE": "Zusammenfassung"
             },
             "typeId": "Summary"
         }
@@ -271,8 +277,7 @@
             "data": [
                 {
                     "source": ".gitignore",
-                    "target": ".gitignore",
-                    "condition": "%{JS: ( %{IsTopLevelProject} && '%{VersionControl}' === 'G.Git' )}"
+                    "target": ".gitignore"
                 },
                 {
                     "source": "LICENSE",

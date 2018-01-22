@@ -2,8 +2,8 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: nymea-plugin-wizard
 Upstream-Contact: Simon Stürz <simon.stuerz@guh.io>
 Copyright: 2018, Simon Stürz 
-
-Download: http://www.github.com/guh/guh-cli
+Download: https://github.com/guh/nymea-qtcreator-wizards
+Source: https://github.com/guh/nymea-qtcreator-wizards.git
 
 License: GPL-2+
  On Debian systems, the complete text of the GNU General
