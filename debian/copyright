@@ -1,0 +1,15 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: nymea-plugin-wizard
+Upstream-Contact: Simon Stürz <simon.stuerz@guh.io>
+Copyright: 2018, Simon Stürz 
+
+Download: http://www.github.com/guh/guh-cli
+
+License: GPL-2+
+ On Debian systems, the complete text of the GNU General
+ Public License can be found in `/usr/share/common-licenses/GPL-2'.
+
+Files: *
+Copyright: (C) 2018 Simon Stürz <simon.stuerz@guh.io>
+License: GPL-2+
+
