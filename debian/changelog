@@ -1,3 +1,9 @@
+nymea-qtcreator-wizards (0.0.1ubuntu1) xenial; urgency=medium
+
+  * Fix template source
+
+ -- Simon Stürz <simon.stuerz@guh.io>  Thu, 25 Jan 2018 11:34:37 +0100
+
 nymea-qtcreator-wizards (0.0.1) xenial; urgency=medium
 
   * Initial release.
