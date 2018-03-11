@@ -17,7 +17,7 @@ If the settings folder does not exist, create it:
 
 ### Install from source
 
-Now you can create a link to the wizard you need:
+You can download the source code and create a symbolic link to the source directory:
 
     $ git clone https://github.com/guh/nymea-qtcreator-wizards.git
     $ cd nymea-qtcreator-wizards
@@ -27,5 +27,6 @@ Now you can create a link to the wizard you need:
 
 If you have installed the *Qt Creator project wizards for nymea* from the debian repository, the wizards will be installed in following location:
 
-    $ ls -l /usr/share/qtcreator/templates/wizards/
+    $ mkdir -p ~/.config/QtProject/qtcreator/templates/wizards/
+    $ ls -l /usr/share/qtcreator/templates/wizards/nymea-plugin-wizard/
     $ ln -s /usr/share/qtcreator/templates/wizards/nymea-plugin-wizard/ ~/.config/QtProject/qtcreator/templates/wizards/

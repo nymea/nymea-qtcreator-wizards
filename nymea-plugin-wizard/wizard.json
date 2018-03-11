@@ -105,7 +105,7 @@
                     "type": "LineEdit",
                     "trIncompleteMessage": "Invalid vendor",
                     "data": {
-                        "trText": "guh",
+                        "trText": "nymea",
                         "validator": "[a-zA-Z][a-zA-Z0-9]*"
                     }
                 },
@@ -277,7 +277,8 @@
             "data": [
                 {
                     "source": ".gitignore",
-                    "target": ".gitignore"
+                    "target": ".gitignore",
+                    "condition": "%{JS: ( %{IsTopLevelProject} && '%{VersionControl}' === 'G.Git' )}"
                 },
                 {
                     "source": "LICENSE",
@@ -326,8 +327,8 @@
                     "target": "debian/copyright"
                 },
                 {
-                    "source": "debian/guh-plugin-template.install.in",
-                    "target": "debian/guh-plugin-%{ProjectName}.install.in"
+                    "source": "debian/nymea-plugin-template.install.in",
+                    "target": "debian/nymea-plugin-%{ProjectName}.install.in"
                 },
                 {
                     "source": "debian/rules",
