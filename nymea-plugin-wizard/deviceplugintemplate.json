@@ -1,20 +1,21 @@
 {
     "name": "%{ObjectName}",
-    "idName": "%{ObjectName}",
+    "displayName": "%{ObjectName}",
     "id": "00000000-0000-0000-0000-000000000000",
     "vendors": [
         {
-            "name": "%{Vendor}",
-            "idName": "%{ProjectName}Vendor",
+            "name": "%{ProjectName}Vendor",
+            "displayName": "%{Vendor}",
             "id": "00000000-0000-0000-0000-000000000000",
             "deviceClasses": [
                 {
-                    "name": "%{DeviceClass}",
-                    "idName": "%{ProjectName}",
+                    "name": "%{ProjectName}",
+                    "displayName": "%{DeviceClass}",
                     "id": "00000000-0000-0000-0000-000000000000",
                     "deviceIcon": "%{DeviceIcon}",
                     "setupMethod": "%{SetupMethod}",
                     "createMethods": ["%{CreateMethod}"],
+                    "interfaces": [ ],
                     "paramTypes": [
 
                     ],
