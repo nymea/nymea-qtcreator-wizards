@@ -1,6 +1,6 @@
 include(plugins.pri)
 
-TARGET = $$qtLibraryTarget(guh_deviceplugin%{ProjectName})
+TARGET = $$qtLibraryTarget(nymea_deviceplugin%{ProjectName})
 
 message(============================================)
 message("Qt version: $$[QT_VERSION]")
