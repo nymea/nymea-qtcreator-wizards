@@ -1,4 +1,4 @@
-include(plugins.pri)
+include(/usr/include/nymea/plugin.pri)
 
 TARGET = $$qtLibraryTarget(nymea_deviceplugin%{ProjectName})
 

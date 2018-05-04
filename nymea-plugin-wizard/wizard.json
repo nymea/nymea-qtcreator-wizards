@@ -127,10 +127,10 @@
                     "type": "ComboBox",
                     "data": {
                         "items": [
-                            "justAdd",
-                            "displayPin",
-                            "enterPin",
-                            "pushButton"
+                            "JustAdd",
+                            "DisplayPin",
+                            "EnterPin",
+                            "PushButton"
                         ]
                     }
                 },
@@ -141,9 +141,9 @@
                     "type": "ComboBox",
                     "data": {
                         "items": [
-                            "user",
-                            "discovery",
-                            "auto"
+                            "User",
+                            "Discovery",
+                            "Auto"
                         ]
                     }
                 },
@@ -305,10 +305,6 @@
                     "source": "template.pro",
                     "target": "%{ProjectName}.pro",
                     "openAsProject": true
-                },
-                {
-                    "source": "plugins.pri",
-                    "target": "plugins.pri"
                 },
                 {
                     "source": "debian/changelog",

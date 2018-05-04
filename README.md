@@ -1,7 +1,7 @@
 # Qt Creator project wizards for nymea
 --------------------------------------------
 
-This repository contains project wizards for the Qt Creator in order to develop for nymea. 
+This repository contains project wizards for the Qt Creator in order to develop for nymea.
 
 ## Installation
 
@@ -9,7 +9,7 @@ Since the Qt Creator can be installed using different methods (from the reposito
 form [Qt](https://www.qt.io/download-qt-installer}) ) the best way to provide these wizards is to create a link to the local user settings of 
 your Qt Creator. 
 
-This enables the wizards for all your Qt Creator installations started with your user. 
+This enables the wizards for all your Qt Creator installations started with your user.
 
 If the settings folder does not exist, create it:
 

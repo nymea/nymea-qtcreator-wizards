@@ -10,7 +10,7 @@ Architecture: all
 Section: utils
 Depends: ${shlibs:Depends},
          ${misc:Depends}
-Recommends: libguh1-dev
+Recommends: libnymea1-dev
 Description: Qt Creator project template for nymea.io plugins
  The nymea daemon is a plugin based IoT (Internet of Things) server. The
  server works like a translator for devices, things and services and

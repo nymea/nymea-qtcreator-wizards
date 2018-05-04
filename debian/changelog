@@ -1,3 +1,9 @@
+nymea-qtcreator-wizards (0.0.3) xenial; urgency=medium
+
+  * Update to new plugin api and plugin.pri file
+
+ -- Simon Stürz <simon.stuerz@guh.io>  Wed, 04 Apr 2018 17:42:08 +0200
+
 nymea-qtcreator-wizards (0.0.2) xenial; urgency=medium
 
   * Fix template source
