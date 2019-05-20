@@ -1,6 +1,6 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *                                                                         *
- *  Copyright (C) 2018 %{DeveloperName} <%{DeveloperMail}>                 *
+ *  Copyright (C) 2019 %{DeveloperName} <%{DeveloperMail}>                 *
  *                                                                         *
  *  This file is part of nymea.                                            *
  *                                                                         *

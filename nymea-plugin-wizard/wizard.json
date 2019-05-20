@@ -146,52 +146,6 @@
                             "Auto"
                         ]
                     }
-                },
-                {
-                    "name": "DeviceIcon",
-                    "trDisplayName": "Icon:",
-                    "mandatory": true,
-                    "type": "ComboBox",
-                    "data": {
-                        "items": [
-                            "None",
-                            "Bed",
-                            "Blinds",
-                            "CeilingLamp",
-                            "Couch",
-                            "DeskLamp",
-                            "Desk",
-                            "Hifi",
-                            "Power",
-                            "Energy",
-                            "Radio",
-                            "SmartPhone",
-                            "Socket",
-                            "StandardLamp",
-                            "Sun",
-                            "Tablet",
-                            "Thermometer",
-                            "Tune",
-                            "Tv",
-                            "Battery",
-                            "Dishwasher",
-                            "WashingMachine",
-                            "LaundryDryer",
-                            "IrHeater",
-                            "Radiator",
-                            "Switch",
-                            "MotionDetectors",
-                            "Weather",
-                            "Time",
-                            "LightBulb",
-                            "Gateway",
-                            "Mail",
-                            "Network",
-                            "Cloud",
-                            "Garage",
-                            "RollerShutter"
-                        ]
-                    }
                 }
             ]
         },
