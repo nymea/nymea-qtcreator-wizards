@@ -25,7 +25,8 @@ You can download the source code and create a symbolic link to the source direct
 
 ### Install from debian package
 
-If you have installed the *Qt Creator project wizards for nymea* from the debian repository, the wizards will be installed in following location:
+If you have installed the *Qt Creator project wizards for nymea* from the debian repository (`apt install nymea-qtcreator-wizards`), 
+the wizards will be installed in following location:
 
     $ mkdir -p ~/.config/QtProject/qtcreator/templates/wizards/
     $ ls -l /usr/share/qtcreator/templates/wizards/nymea-plugin-wizard/

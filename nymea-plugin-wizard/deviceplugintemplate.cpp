@@ -52,16 +52,16 @@ void %{Class}::deviceRemoved(Device *device)
     // Clean up all data related to this device
 }
 
-DeviceManager::DeviceSetupStatus %{Class}::setupDevice(Device *device)
+Device::DeviceSetupStatus %{Class}::setupDevice(Device *device)
 {
     qCDebug(dc%{ObjectName}()) << "Setup device" << device->name() << device->params();
 
-    return DeviceManager::DeviceSetupStatusSuccess;
+    return Device::DeviceSetupStatusSuccess;
 }
 
-DeviceManager::DeviceError %{Class}::executeAction(Device *device, const Action &action)
+Device::DeviceError %{Class}::executeAction(Device *device, const Action &action)
 {
     qCDebug(dc%{ObjectName}()) << "Executing action for device" << device->name() << action.actionTypeId().toString() << action.params();
 
-    return DeviceManager::DeviceErrorNoError;
+    return Device::DeviceErrorNoError;
 }
