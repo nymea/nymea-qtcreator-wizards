@@ -4,6 +4,8 @@ Priority: options
 Maintainer: %{DeveloperName} <%{DeveloperMail}>
 Build-depends: debhelper (>= 9.0.0),
                libnymea1-dev,
+               pkg-config,
+               nymea-dev-tools,
 Standards-Version: 3.9.3
 
 Package: nymea-plugin-%{ProjectName}
