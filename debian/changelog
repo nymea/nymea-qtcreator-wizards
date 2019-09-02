@@ -3,7 +3,7 @@ nymea-qtcreator-wizards (0.0.4) xenial; urgency=medium
   [ Simon Stürz ]
   * Update to new plugin info compiler and update plugin.pri file
 
- -- Jenkins <jenkins@nymea.io>  Mon, 22 Jul 2019 12:17:33 +0200
+ -- Jenkins <jenkins@nymea.io>  Mon, 02 Sep 2019 18:02:40 +0200
 
 nymea-qtcreator-wizards (0.0.3) xenial; urgency=medium
 
