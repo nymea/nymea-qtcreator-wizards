@@ -1,7 +1,7 @@
 Source: nymea-qtcreator-wizards
 Section: utils
 Priority: options
-Maintainer: Simon Stürz <simon.stuerz@guh.io>
+Maintainer: Simon Stürz <simon.stuerz@nymea.io>
 Standards-Version: 3.9.3
 Build-depends: debhelper (>= 0.0.0)
 

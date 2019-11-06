@@ -1,15 +1,15 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: nymea-plugin-wizard
-Upstream-Contact: Simon Stürz <simon.stuerz@guh.io>
-Copyright: 2018, Simon Stürz 
-Download: https://github.com/guh/nymea-qtcreator-wizards
-Source: https://github.com/guh/nymea-qtcreator-wizards.git
+Upstream-Name: nymea-qtcreator-wizards
+Upstream-Contact: Simon Stürz <simon.stuerz@nymea.io>
+Copyright: 2018-2019, Simon Stürz 
+Download: https://github.com/nymea/nymea-qtcreator-wizards
+Source: https://github.com/nymea/nymea-qtcreator-wizards.git
 
 License: GPL-2+
  On Debian systems, the complete text of the GNU General
  Public License can be found in `/usr/share/common-licenses/GPL-2'.
 
 Files: *
-Copyright: (C) 2018 Simon Stürz <simon.stuerz@guh.io>
+Copyright: (C) 2018-2019 Simon Stürz <simon.stuerz@nymea.io>
 License: GPL-2+
 
