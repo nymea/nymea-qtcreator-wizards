@@ -40,14 +40,14 @@ void %{Class}::startMonitoringAutoDevices()
 
 void %{Class}::postSetupDevice(Device *device)
 {
-    qCDebug(dc%{ObjectName}()) << "Post setup device" << device->name() << device->params();
+    qCDebug(dc%{ObjectName}()) << "Post setup device" << device;
 
     // This method will be called once the setup for device is finished
 }
 
 void %{Class}::deviceRemoved(Device *device)
 {
-    qCDebug(dc%{ObjectName}()) << "Remove device" << device->name() << device->params();
+    qCDebug(dc%{ObjectName}()) << "Remove device" << device;
 
     // Clean up all data related to this device
 }
