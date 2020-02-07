@@ -1,16 +1,16 @@
 {
-    "name": "%{ObjectName}",
+    "name": "%{ProjectName}",
     "displayName": "%{ObjectName}",
     "id": "00000000-0000-0000-0000-000000000000",
     "vendors": [
         {
-            "name": "nymea",
-            "displayName": "%{Vendor}",
-            "id": "2062d64d-3232-433c-88bc-0d33c0ba2ba6",
+            "name": "%{Vendor}",
+            "displayName": "%{VendorDisplayName}",
+            "id": "00000000-0000-0000-0000-000000000000",
             "deviceClasses": [
                 {
-                    "name": "%{ProjectName}",
-                    "displayName": "%{DeviceClass}",
+                    "name": "%{DeviceClass}",
+                    "displayName": "%{DeviceClassDisplayName}",
                     "id": "00000000-0000-0000-0000-000000000000",
                     "setupMethod": "%{SetupMethod}",
                     "createMethods": ["%{CreateMethod}"],

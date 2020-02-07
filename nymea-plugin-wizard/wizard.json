@@ -36,6 +36,10 @@
         {
             "key": "ObjectName",
             "value": "%{JS: '%{ProjectName}'.charAt(0).toUpperCase() + '%{ProjectName}'.slice(1)}"
+        },
+        {
+            "key": "Class",
+            "value": "DevicePlugin%{ObjectName}"
         }
     ],
     "pages": [
@@ -61,21 +65,24 @@
         },
         {
             "trDisplayName": {
-                "C": "Plugin details",
-                "en_US": "Plugin details",
-                "de_DE": "Plugin Details"
+                "C": "Vendor information",
+                "en_US": "Vendor information",
+                "de_DE": "Herstellerinformationen"
             },
-            "trShortTitle": "Details",
+            "trShortTitle": "Vendor",
             "typeId": "Fields",
             "data": [
                 {
-                    "name": "Class",
-                    "trDisplayName": "Class name:",
-                    "mandatory": true,
-                    "type": "LineEdit",
+                    "name": "VendorDescription",
+                    "type": "Label",
+                    "span": true,
                     "data": {
-                        "trText": "DevicePlugin%{ObjectName}",
-                        "validator": "[a-zA-Z][a-zA-Z0-9]*"
+                        "wordWrap": true,
+                        "trText": {
+                            "C": "Please enter the information about the vendor of the device or service this plugin will support. The vendor name will be used to identify the vendor in the code, while the vendor display name should be a user displayable name for the vendor.",
+                            "en_US": "Please enter the information about the vendor of the device or service this plugin will support. The vendor name will be used to identify the vendor in the code, while the vendor display name should be a user displayable name for the vendor.",
+                            "de_DE": "Bitte geben Sie die Herstellerinformationen des Gerätes bzw. Dienstes für dieses Plugin ein. Herstellername wird zum Referenzieren des Herstellers im Quellcode benutzt. Herstelleranzeigename wird dem Benutzer angezeigt und sollte dementsprechend möglichst genau dem Namen des Herstellers entsprechen."
+                        }
                     }
                 },
                 {
@@ -86,38 +93,69 @@
                     }
                 },
                 {
-                    "name": "JsonDescription",
-                    "type": "Label",
-                    "span": true,
-                    "data": {
-                        "wordWrap": true,
-                        "trText": {
-                            "C": "Plugin JSON information",
-                            "en_US": "Plugin JSON information",
-                            "de_DE": "Plugin JSON Informationen"
-                        }
-                    }
-                },
-                {
                     "name": "Vendor",
                     "trDisplayName": "Vendor name:",
                     "mandatory": true,
                     "type": "LineEdit",
                     "trIncompleteMessage": "Invalid vendor",
                     "data": {
-                        "trText": "nymea",
+                        "trText": "%{ProjectName}",
                         "validator": "[a-zA-Z][a-zA-Z0-9]*"
                     }
                 },
                 {
+                    "name": "VendorDisplayName",
+                    "trDisplayName": "Vendor display name:",
+                    "mandatory": true,
+                    "type": "LineEdit",
+                    "trIncompleteMessage": "Invalid vendor display name",
+                    "data": {
+                        "trText": "%{ObjectName}"
+                    }
+                }
+            ]
+        },
+        {
+            "trDisplayName": {
+                "C": "Device or service details",
+                "en_US": "Device or service details",
+                "de_DE": "Geräte- bzw. Dienstinformation"
+            },
+            "trShortTitle": "Device",
+            "typeId": "Fields",
+            "data": [
+                {
+                    "name": "DeviceClassDescription",
+                    "type": "Label",
+                    "span": true,
+                    "data": {
+                        "wordWrap": true,
+                        "trText": {
+                            "C": "Please enter the information about the device or service this plugin will support. Device/Service name will be used to identify this device in the code, the display name should be a user displayable name for the device or service.",
+                            "en_US": "Please enter the information about the device or service this plugin will support. Device/Service name will be used to identify this device in the code, the display name should be a user displayable name for the device or service.",
+                            "de_DE": "Bitte geben Sie die Informationen über das Gerätes bzw. den Dienst für dieses Plugin ein. Der Geräte-/Dienstname wird benutzt um dieses Gerät / diesen Dienst im Quellcode zu identifizieren, der Anzeigename wird dem Benutzer angezeigt und sollte dementsprechend genau mit dem Name des Gerätes / des Dienstes übereinstimmen."
+                        }
+                    }
+                },
+                {
                     "name": "DeviceClass",
-                    "trDisplayName": "Device name:",
+                    "trDisplayName": "Device/service name:",
                     "mandatory": true,
                     "type": "LineEdit",
                     "trIncompleteMessage": "Invalid device name.",
                     "data": {
-                        "trText": "untitled",
+                        "trText": "%{ProjectName}",
                         "validator": "[a-zA-Z][a-zA-Z0-9]*"
+                    }
+                },
+                {
+                    "name": "DeviceClassDisplayName",
+                    "trDisplayName": "Device/service display name:",
+                    "mandatory": true,
+                    "type": "LineEdit",
+                    "trIncompleteMessage": "Invalid device/service display name.",
+                    "data": {
+                        "trText": "%{ObjectName}"
                     }
                 },
                 {
