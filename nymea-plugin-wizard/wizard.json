@@ -9,9 +9,9 @@
         "de_DE": "Projekt Vorlage für die Entwicklung eines neuen nymea Plugins."
     },
     "trDisplayName": {
-        "C": "Plugin for nymea",
-        "en_US": "Plugin for nymea",
-        "de_DE": "Plugin für nymea"
+        "C": "nymea integration plugin",
+        "en_US": "nymea integration plugin",
+        "de_DE": "Integrations-Plugin für nymea"
     },
     "trDisplayCategory": "nymea",
     "icon": "nymea-plugin.png",
