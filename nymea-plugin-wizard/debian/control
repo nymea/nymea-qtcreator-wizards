@@ -4,8 +4,9 @@ Priority: options
 Maintainer: %{DeveloperName} <%{DeveloperMail}>
 Build-depends: debhelper (>= 9.0.0),
                libnymea1-dev,
+               nymea-dev-tools:native,
+               qt5-qmake:native,
                pkg-config,
-               nymea-dev-tools,
 Standards-Version: 3.9.3
 
 Package: nymea-plugin-%{ProjectName}
