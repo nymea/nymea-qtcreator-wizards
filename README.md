@@ -19,7 +19,7 @@ If the settings folder does not exist, create it:
 
 You can download the source code and create a symbolic link to the source directory:
 
-    $ git clone https://github.com/guh/nymea-qtcreator-wizards.git
+    $ git clone https://github.com/nymea/nymea-qtcreator-wizards.git
     $ cd nymea-qtcreator-wizards
     $ ln -s $(pwd)/nymea-plugin-wizard/ ~/.config/QtProject/qtcreator/templates/wizards/
 
