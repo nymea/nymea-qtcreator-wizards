@@ -1,3 +1,11 @@
+nymea-qtcreator-wizards (0.0.6) xenial; urgency=medium
+
+  [ Michael Zanetti ]
+  * Update build deps in wizard created dpkg
+  * Add displayName properties to wizard
+
+ -- Jenkins <jenkins@nymea.io>  Sun, 23 Feb 2020 23:38:55 +0100
+
 nymea-qtcreator-wizards (0.0.5) xenial; urgency=medium
   [ Simon Stürz ]
   * Update plugin api
