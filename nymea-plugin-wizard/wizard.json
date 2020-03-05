@@ -4,9 +4,9 @@
     "id": "P.NymeaPlugin",
     "category": "nymea",
     "trDescription": {
-        "C": "Project template for developing a new nymea plugin.",
-        "en_US": "Project template for developing a new nymea plugin.",
-        "de_DE": "Projekt Vorlage für die Entwicklung eines neuen nymea Plugins."
+        "C": "Project template for developing a new nymea integration plugin.",
+        "en_US": "Project template for developing a new nymea integration plugin.",
+        "de_DE": "Projekt Vorlage für die Entwicklung eines neuen nymea Integrations-Plugins."
     },
     "trDisplayName": {
         "C": "nymea integration plugin",
@@ -39,7 +39,7 @@
         },
         {
             "key": "Class",
-            "value": "DevicePlugin%{ObjectName}"
+            "value": "IntegrationPlugin%{ObjectName}"
         }
     ],
     "pages": [
@@ -57,9 +57,9 @@
             "typeId": "Project",
             "data": {
                 "trDescription": {
-                    "C": "This is a project template for developing a nymea plugin",
-                    "en_US": "This is a project template for developing a nymea plugin",
-                    "de_DE": "Dies ist eine Projektvorlage für die Entwicklung eines nymea Plugins."
+                    "C": "This is a project template for developing a nymea integration plugin",
+                    "en_US": "This is a project template for developing a nymea integration plugin",
+                    "de_DE": "Dies ist eine Projektvorlage für die Entwicklung eines nymea Integrations-Plugins."
                 }
             }
         },
@@ -121,11 +121,11 @@
                 "en_US": "Device or service details",
                 "de_DE": "Geräte- bzw. Dienstinformation"
             },
-            "trShortTitle": "Device",
+            "trShortTitle": "Thing",
             "typeId": "Fields",
             "data": [
                 {
-                    "name": "DeviceClassDescription",
+                    "name": "ThingClassDescription",
                     "type": "Label",
                     "span": true,
                     "data": {
@@ -138,18 +138,18 @@
                     }
                 },
                 {
-                    "name": "DeviceClass",
+                    "name": "ThingClass",
                     "trDisplayName": "Device/service name:",
                     "mandatory": true,
                     "type": "LineEdit",
-                    "trIncompleteMessage": "Invalid device name.",
+                    "trIncompleteMessage": "Invalid thing name.",
                     "data": {
                         "trText": "%{ProjectName}",
                         "validator": "[a-zA-Z][a-zA-Z0-9]*"
                     }
                 },
                 {
-                    "name": "DeviceClassDisplayName",
+                    "name": "ThingClassDisplayName",
                     "trDisplayName": "Device/service display name:",
                     "mandatory": true,
                     "type": "LineEdit",
@@ -281,16 +281,16 @@
                     "target": "README.md"
                 },
                 {
-                    "source": "deviceplugintemplate.json",
-                    "target": "deviceplugin%{ProjectName}.json"
+                    "source": "integrationplugintemplate.json",
+                    "target": "integrationplugin%{ProjectName}.json"
                 },
                 {
-                    "source": "deviceplugintemplate.cpp",
-                    "target": "deviceplugin%{ProjectName}.cpp"
+                    "source": "integrationplugintemplate.cpp",
+                    "target": "integrationplugin%{ProjectName}.cpp"
                 },
                 {
-                    "source": "deviceplugintemplate.h",
-                    "target": "deviceplugin%{ProjectName}.h",
+                    "source": "integrationplugintemplate.h",
+                    "target": "integrationplugin%{ProjectName}.h",
                     "openInEditor": true
                 },
                 {

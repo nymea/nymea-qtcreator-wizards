@@ -18,32 +18,45 @@
  *                                                                         *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-#ifndef %{GUARD}
-#define %{GUARD}
+#include "plugininfo.h"
+#include "integrationplugin%{ProjectName}.h"
 
-#include "devices/deviceplugin.h"
-
-class %{Class}: public DevicePlugin
+%{Class}::%{Class}()
 {
-    Q_OBJECT
 
-    Q_PLUGIN_METADATA(IID "io.nymea.DevicePlugin" FILE "deviceplugin%{ProjectName}.json")
-    Q_INTERFACES(DevicePlugin)
+}
 
+void %{Class}::init()
+{
+    // Initialisation can be done here.
+    qCDebug(dc%{ObjectName}()) << "Plugin initialized.";
+}
 
-public:
-    explicit %{Class}();
+void %{Class}::setupThing(ThingSetupInfo *info)
+{
+    // A thing is being set up. Use info->thing() to get details of the thing, do
+    // the required setup (e.g. connect to the device) and call info->finish() when done.
 
-    void init() override;
+    qCDebug(dc%{ObjectName}()) << "Setup thing" << info->thing();
 
-    void setupDevice(DeviceSetupInfo *info) override;
+    info->finish(Thing::ThingErrorNoError);
+}
 
-    void executeAction(DeviceActionInfo *info) override;
+void %{Class}::executeAction(ThingActionInfo *info)
+{
+    // An action is being executed. Use info->action() to get details about the action,
+    // do the required operations (e.g. send a command to the network) and call info->finish() when done.
 
-    void deviceRemoved(Device *device) override;
+    qCDebug(dc%{ObjectName}()) << "Executing action for thing" << info->thing() << info->action().actionTypeId().toString() << info->action().params();
 
-private:
+    info->finish(Thing::ThingErrorNoError);
+}
 
-};
+void %{Class}::thingRemoved(Thing *thing)
+{
+    // A thing is being removed from the system. Do the required cleanup
+    // (e.g. disconnect from the device) here.
 
-#endif // %{GUARD}
+    qCDebug(dc%{ObjectName}()) << "Remove thing" << thing;
+}
+

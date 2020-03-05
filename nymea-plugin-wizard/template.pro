@@ -1,8 +1,8 @@
 include($$[QT_INSTALL_PREFIX]/include/nymea/plugin.pri)
 
 SOURCES += \\
-    deviceplugin%{ProjectName}.cpp
+    integrationplugin%{ProjectName}.cpp
 
 HEADERS += \\
-    deviceplugin%{ProjectName}.h
+    integrationplugin%{ProjectName}.h
 
