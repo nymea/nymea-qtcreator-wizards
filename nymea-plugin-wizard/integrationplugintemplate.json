@@ -7,10 +7,10 @@
             "name": "%{Vendor}",
             "displayName": "%{VendorDisplayName}",
             "id": "00000000-0000-0000-0000-000000000000",
-            "deviceClasses": [
+            "thingClasses": [
                 {
-                    "name": "%{DeviceClass}",
-                    "displayName": "%{DeviceClassDisplayName}",
+                    "name": "%{ThingClass}",
+                    "displayName": "%{ThingClassDisplayName}",
                     "id": "00000000-0000-0000-0000-000000000000",
                     "setupMethod": "%{SetupMethod}",
                     "createMethods": ["%{CreateMethod}"],
