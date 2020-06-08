@@ -1,3 +1,10 @@
+nymea-qtcreator-wizards (0.0.8) xenial; urgency=medium
+
+  [ Michael Zanetti ]
+  * Fix wrong filename
+
+ -- Jenkins <jenkins@nymea.io>  Tue, 09 Jun 2020 00:48:17 +0200
+
 nymea-qtcreator-wizards (0.0.7) xenial; urgency=medium
 
   [ Michael Zanetti ]
