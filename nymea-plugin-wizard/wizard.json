@@ -273,8 +273,8 @@
                     "condition": "%{JS: ( %{IsTopLevelProject} && '%{VersionControl}' === 'G.Git' )}"
                 },
                 {
-                    "source": "LICENSE",
-                    "target": "LICENSE"
+                    "source": "LICENSE.LGPL3",
+                    "target": "LICENSE.LGPL3"
                 },
                 {
                     "source": "README.md",
@@ -282,11 +282,13 @@
                 },
                 {
                     "source": "integrationplugintemplate.json",
-                    "target": "integrationplugin%{ProjectName}.json"
+                    "target": "integrationplugin%{ProjectName}.json",
+                    "openInEditor": true
                 },
                 {
                     "source": "integrationplugintemplate.cpp",
-                    "target": "integrationplugin%{ProjectName}.cpp"
+                    "target": "integrationplugin%{ProjectName}.cpp",
+                    "openInEditor": true
                 },
                 {
                     "source": "integrationplugintemplate.h",
