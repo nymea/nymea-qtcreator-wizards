@@ -282,11 +282,13 @@
                 },
                 {
                     "source": "integrationplugintemplate.json",
-                    "target": "integrationplugin%{ProjectName}.json"
+                    "target": "integrationplugin%{ProjectName}.json",
+                    "openInEditor": true
                 },
                 {
                     "source": "integrationplugintemplate.cpp",
-                    "target": "integrationplugin%{ProjectName}.cpp"
+                    "target": "integrationplugin%{ProjectName}.cpp",
+                    "openInEditor": true
                 },
                 {
                     "source": "integrationplugintemplate.h",
