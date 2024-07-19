@@ -1,9 +1,10 @@
 Source: nymea-qtcreator-wizards
 Section: utils
-Priority: options
-Maintainer: Simon Stürz <simon.stuerz@nymea.io>
-Standards-Version: 3.9.3
+Priority: optional
+Maintainer: nymea GmbH <developer@nymea.io>
+Standards-Version: 4.6.0
 Build-depends: debhelper (>= 0.0.0)
+
 
 Package: nymea-qtcreator-wizards
 Architecture: all
