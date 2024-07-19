@@ -9,12 +9,12 @@ PREPROCESS_FILES := $(wildcard debian/*.in)
 $(PREPROCESS_FILES:.in=): %: %.in
 	sed 's,/@DEB_HOST_MULTIARCH@,$(DEB_HOST_MULTIARCH:%=/%),g' $< > $@
 
-%:
-	dh $@ --parallel
-
 override_dh_install: $(PREPROCESS_FILES:.in=)
 	make -j9 install DESTDIR=debian/tmp AM_UPDATE_INFO_DIR=no INSTALL_ROOT=debian/tmp
-	dh_install --fail-missing
+	dh_install
+
+override_dh_missing:
+	dh_missing --list-missing
 
 override_dh_auto_build:
 	dh_auto_build
@@ -23,3 +23,7 @@ override_dh_auto_build:
 override_dh_auto_clean:
 	dh_auto_clean
 	rm -rf $(PREPROCESS_FILES:.in=)
+
+%:
+	dh $@ --parallel
+

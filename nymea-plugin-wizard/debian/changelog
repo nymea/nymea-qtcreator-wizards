@@ -1,4 +1,4 @@
-nymea-plugin-%{ProjectName} (0.0.1) xenial; urgency=medium
+nymea-plugin-%{ProjectName} (0.0.1) bookworm; urgency=medium
 
   * Initial release.
 

@@ -22,6 +22,7 @@
 #define %{GUARD}
 
 #include "integrations/integrationplugin.h"
+#include "extern-plugininfo.h"
 
 class %{Class}: public IntegrationPlugin
 {
