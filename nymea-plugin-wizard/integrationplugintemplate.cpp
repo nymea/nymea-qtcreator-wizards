@@ -1,6 +1,6 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *                                                                         *
- *  Copyright (C) 2020 %{DeveloperName} <%{DeveloperMail}>                 *
+ *  Copyright (C) 2024 %{DeveloperName} <%{DeveloperMail}>                 *
  *                                                                         *
  *  This library is free software; you can redistribute it and/or          *
  *  modify it under the terms of the GNU Lesser General Public             *
@@ -18,8 +18,8 @@
  *                                                                         *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-#include "plugininfo.h"
 #include "integrationplugin%{ProjectName}.h"
+#include "plugininfo.h"
 
 %{Class}::%{Class}()
 {

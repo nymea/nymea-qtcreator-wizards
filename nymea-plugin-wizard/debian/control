@@ -1,13 +1,14 @@
 Source: nymea-plugin-%{ProjectName}
 Section: utils
-Priority: options
+Priority: optional
 Maintainer: %{DeveloperName} <%{DeveloperMail}>
+Standards-Version: 4.6.0
 Build-depends: debhelper (>= 9.0.0),
                libnymea1-dev,
                nymea-dev-tools:native,
                qt5-qmake:native,
                pkg-config,
-Standards-Version: 3.9.3
+
 
 Package: nymea-plugin-%{ProjectName}
 Architecture: any

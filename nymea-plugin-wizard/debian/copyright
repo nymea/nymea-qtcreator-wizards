@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ${ProjectName}
 Upstream-Contact: %{DeveloperName} <%{DeveloperMail}>
-Copyright: 2020, %{DeveloperName} 
+Copyright: 2024, %{DeveloperName}
 
 
 License: LGPL-3
