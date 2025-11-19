@@ -1,4 +1,4 @@
-nymea-plugin-%{ProjectName} (0.0.1) bookworm; urgency=medium
+nymea-plugin-%{ProjectName} (0.0.1) unstable; urgency=medium
 
   * Initial release.
 

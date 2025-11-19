@@ -1,0 +1,5 @@
+nymea-plugin-%{ProjectName} (0.0.1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- %{DeveloperName} <%{DeveloperMail}>  Mon, 21 Aug 2017 10:12:00 +0000
