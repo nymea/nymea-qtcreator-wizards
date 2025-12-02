@@ -273,8 +273,12 @@
                     "condition": "%{JS: ( %{IsTopLevelProject} && '%{VersionControl}' === 'G.Git' )}"
                 },
                 {
-                    "source": "LICENSE.LGPL3",
-                    "target": "LICENSE.LGPL3"
+                    "source": "LICENSE.GPL3",
+                    "target": "LICENSE.GPL3"
+                },
+                {
+                    "source": "COPYING",
+                    "target": "COPYING"
                 },
                 {
                     "source": "README.md",
@@ -301,32 +305,64 @@
                     "openAsProject": true
                 },
                 {
-                    "source": "debian/changelog",
-                    "target": "debian/changelog"
+                    "source": "debian",
+                    "target": "debian"
                 },
                 {
-                    "source": "debian/compat",
-                    "target": "debian/compat"
+                    "source": "debian-qt5/changelog",
+                    "target": "debian-qt5/changelog"
                 },
                 {
-                    "source": "debian/control",
-                    "target": "debian/control"
+                    "source": "debian-qt5/compat",
+                    "target": "debian-qt5/compat"
                 },
                 {
-                    "source": "debian/copyright",
-                    "target": "debian/copyright"
+                    "source": "debian-qt5/control",
+                    "target": "debian-qt5/control"
                 },
                 {
-                    "source": "debian/nymea-plugin-template.install.in",
-                    "target": "debian/nymea-plugin-%{ProjectName}.install.in"
+                    "source": "debian-qt5/copyright",
+                    "target": "debian-qt5/copyright"
                 },
                 {
-                    "source": "debian/rules",
+                    "source": "debian-qt5/nymea-plugin-template.install.in",
+                    "target": "debian-qt5/nymea-plugin-%{ProjectName}.install.in"
+                },
+                {
+                    "source": "debian-qt5/rules",
                     "target": "debian/rules"
                 },
                 {
-                    "source": "debian/source/format",
-                    "target": "debian/source/format"
+                    "source": "debian-qt5/source/format",
+                    "target": "debian-qt5/source/format"
+                },
+                {
+                    "source": "debian-qt6/changelog",
+                    "target": "debian-qt6/changelog"
+                },
+                {
+                    "source": "debian-qt6/compat",
+                    "target": "debian-qt6/compat"
+                },
+                {
+                    "source": "debian-qt6/control",
+                    "target": "debian-qt6/control"
+                },
+                {
+                    "source": "debian-qt6/copyright",
+                    "target": "debian-qt6/copyright"
+                },
+                {
+                    "source": "debian-qt6/nymea-plugin-template.install.in",
+                    "target": "debian-qt6/nymea-plugin-%{ProjectName}.install.in"
+                },
+                {
+                    "source": "debian-qt6/rules",
+                    "target": "debian-qt6/rules"
+                },
+                {
+                    "source": "debian-qt6/source/format",
+                    "target": "debian-qt6/source/format"
                 }
             ]
         }

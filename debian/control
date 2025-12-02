@@ -1,9 +1,9 @@
 Source: nymea-qtcreator-wizards
 Section: utils
 Priority: optional
-Maintainer: nymea GmbH <developer@nymea.io>
+Maintainer: chargebyte austria GmbH <contact@nymea.io>
 Standards-Version: 4.6.0
-Build-depends: debhelper (>= 0.0.0)
+Build-depends: debhelper
 
 
 Package: nymea-qtcreator-wizards
@@ -13,10 +13,5 @@ Depends: ${shlibs:Depends},
          ${misc:Depends}
 Recommends: libnymea1-dev, nymea-dev-tools, qtcreator
 Description: Qt Creator project template for nymea.io plugins
- The nymea daemon is a plugin based IoT (Internet of Things) server. The
- server works like a translator for devices, things and services and
- allows them to interact.
- With the powerful rule engine you are able to connect any device available
- in the system and create individual scenes and behaviors for your environment.
  .
  This package will install the Qt Creator project template for nymea.io plugins
